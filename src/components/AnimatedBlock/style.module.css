@@ -1,0 +1,30 @@
+.block {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f1f1f1;
+  background-color: rgb(42, 206, 206);
+  font-size: 54px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  animation: moveHorizontal 5s ease infinite;
+  z-index: 2;
+}
+
+@keyframes moveHorizontal {
+  0% {
+    top: 50%;
+  }
+  33% {
+    top: calc(100% - 100px);
+  }
+  66% {
+    top: 0%;
+  }
+  99% {
+    top: 50%;
+  }
+}
