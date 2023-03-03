@@ -8,23 +8,18 @@
   background-color: rgb(42, 206, 206);
   font-size: 54px;
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 0;
-  animation: moveHorizontal 5s ease infinite;
+  animation: moveHorizontal 5s infinite;
   z-index: 2;
 }
 
 @keyframes moveHorizontal {
   0% {
-    top: 50%;
-  }
-  33% {
+    top: 0
+  } 50% {
     top: calc(100% - 100px);
-  }
-  66% {
-    top: 0%;
-  }
-  99% {
-    top: 50%;
+  } 100% {
+    top: 0;
   }
 }
