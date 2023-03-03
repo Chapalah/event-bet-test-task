@@ -45,13 +45,13 @@ const App = () => {
           {isShowCircle && (
             <Circle
               refAnimatedBlock={refAnimatedBlock}
-              refBlock={refBlock}
               setIsShowCircle={setIsShowCircle}
             />
           )}
 
           <Block refBlock={refBlock} />
         </div>
+
         <Button {...timer} setTimer={setTimer} setIsShowCircle={setIsShowCircle} />
       </div>
     </div>

@@ -3,7 +3,16 @@
   height: 50px;
   border-radius: 100px;
   background-color: rgb(166, 249, 41);
-  position: fixed;
+  position: absolute;
   z-index: 5;
-  transition: 1.8s linear;
+  animation: move 2s;
+}
+
+@keyframes move {
+  from {
+  }
+  to {
+    transform: translateX(calc(100vw - 188px));
+    top: calc(50% + 25px);
+  }
 }
